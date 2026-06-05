@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS – Tests & Results</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #eef2f7; }
+    .bc-header { background: #2e1a6e; padding: 16px 20px; display: flex; align-items: center; gap: 12px; }
+    .bc-logo-dots { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; width: 22px; }
+    .bc-logo-dots span { width: 9px; height: 9px; background: white; border-radius: 50%; display: block; }
+    .bc-logo-text { color: white; font-size: 11px; font-weight: 500; line-height: 1.2; }
+    .bc-ielts { color: white; font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-left: 8px; border-left: 1px solid rgba(255,255,255,0.3); padding-left: 12px; }
+    .bc-red-bar { background: #cc0000; height: 5px; }
+    .bc-nav { background: #2e1a6e; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .bc-nav-menu { color: white; font-size: 15px; font-weight: 500; }
+    .bc-hamburger { display: flex; flex-direction: column; gap: 4px; cursor: pointer; }
+    .bc-hamburger span { width: 22px; height: 2px; background: white; display: block; }
+    .bc-hero { background: #1a7a6e; padding: 24px 20px; }
+    .bc-hero h1 { color: white; font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .bc-hero-underline { width: 30px; height: 3px; background: white; margin-bottom: 12px; }
+    .bc-hero p { color: white; font-size: 14px; line-height: 1.6; }
+    .bc-body { background: #eef2f7; padding: 24px 20px; max-width: 600px; margin: 0 auto; }
+    .bc-section-title { font-size: 18px; font-weight: 700; color: #1a1a3e; margin-bottom: 14px; }
+    .bc-card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+    .bc-no-test { color: #666; font-size: 14px; margin-bottom: 16px; }
+    .bc-btn-primary { background: #1a4fa0; color: white; border: none; border-radius: 24px; padding: 13px 0; font-size: 15px; font-weight: 600; width: 100%; cursor: pointer; }
+    .bc-btn-primary:hover { background: #153d80; }
+    .bc-prev-section { margin-top: 8px; }
+    .bc-result-card { background: white; border-radius: 8px; padding: 20px; }
+    .bc-result-title { font-size: 20px; font-weight: 700; color: #1a4fa0; text-decoration: underline; margin-bottom: 4px; cursor: pointer; }
+    .bc-result-date { font-size: 15px; font-weight: 700; color: #1a1a3e; margin-bottom: 8px; }
+    .bc-result-meta { display: flex; align-items: center; gap: 6px; font-size: 14px; color: #555; margin-bottom: 4px; }
+    .bc-score-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
+    .bc-score-info { flex: 1; }
+    .bc-score-circle { width: 72px; height: 72px; border-radius: 50%; border: 5px solid #2e7d32; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .bc-score-num { font-size: 26px; font-weight: 700; color: #1a1a3e; }
+    .bc-scored-label { font-size: 12px; color: #555; text-align: right; margin-bottom: 6px; }
+    .bc-score-col { display: flex; flex-direction: column; align-items: flex-end; }
+    .bc-btn-full { background: #1a4fa0; color: white; border: none; border-radius: 24px; padding: 13px 0; font-size: 15px; font-weight: 600; width: 100%; cursor: pointer; margin-bottom: 12px; }
+    .bc-btn-full:hover { background: #153d80; }
+    .bc-btn-rebook { background: none; border: none; color: #1a4fa0; font-size: 14px; font-weight: 600; text-align: center; width: 100%; cursor: pointer; display: block; text-decoration: underline; }
+    .bc-footer { background: #1a1a3e; padding: 24px 20px; }
+    .bc-footer a { color: #aaa; font-size: 13px; display: block; margin-bottom: 10px; text-decoration: none; }
+    .bc-footer a:hover { color: white; }
+    .doc-icon { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <div class="bc-red-bar"></div>
+  <div class="bc-header">
+    <div class="bc-logo-dots">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="bc-logo-text">BRITISH<br>COUNCIL</div>
+    <div class="bc-ielts">IELTS</div>
+  </div>
+  <div class="bc-nav">
+    <div class="bc-nav-menu">Menu</div>
+    <div class="bc-hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="bc-hero">
+    <h1>Tests &amp; Results</h1>
+    <div class="bc-hero-underline"></div>
+    <p>Your Test Taker portal will help you prepare for your test, manage your bookings, get your results, and use your IELTS score to continue your journey with the English language.</p>
+  </div>
+
+  <div class="bc-body">
+    <div class="bc-section-title">Your upcoming tests</div>
+    <div class="bc-card">
+      <div class="bc-no-test">You don't have any upcoming tests</div>
+      <button class="bc-btn-primary">Book a new test</button>
+    </div>
+
+    <div class="bc-prev-section">
+      <div class="bc-section-title">Your previous tests &amp; scores</div>
+      <div class="bc-result-card">
+        <div class="bc-score-row">
+          <div class="bc-score-info">
+            <div class="bc-result-title">IELTS Academic</div>
+            <div class="bc-result-date">30 May 2026</div>
+            <div class="bc-result-meta">
+              <span class="doc-icon">📄</span>
+              <span>IELTS on computer</span>
+            </div>
+            <div class="bc-result-meta">Ho Chi Minh</div>
+          </div>
+          <div class="bc-score-col">
+            <div class="bc-scored-label">You scored:</div>
+            <div class="bc-score-circle">
+              <span class="bc-score-num">7.0</span>
+            </div>
+          </div>
+        </div>
+        <button class="bc-btn-full">See full result</button>
+        <button class="bc-btn-rebook">Rebook this test with different dates</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bc-footer">
+    <a href="#">Terms of use</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Privacy and cookies</a>
+  </div>
+
+</body>
+</html>
